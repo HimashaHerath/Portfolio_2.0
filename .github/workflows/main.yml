@@ -19,7 +19,9 @@ jobs:
         node-version: 16
 
     - name: Install dependencies
+      working-directory: ./client
       run: npm ci
 
     - name: Build
+      working-directory: ./client
       run: npm run build
