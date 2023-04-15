@@ -182,7 +182,7 @@ import {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Rick does.",
       name: "Kavindu",
-      designation: "Event Co-ordination",
+      designation: "Event coordinator",
       company: "Games Guild",
       image:feedback3,
     },
