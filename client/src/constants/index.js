@@ -25,6 +25,7 @@ import {
     threejs,
     feedback1,
     feedback2,
+    feedback3,
     
   } from "../assets";
   
@@ -181,9 +182,9 @@ import {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Rick does.",
       name: "Kavindu",
-      designation: "COO",
-      company: "DEF Corp",
-      image: feedback2,
+      designation: "Event Co-ordination",
+      company: "Games Guild",
+      image:feedback3,
     },
     {
       testimonial:

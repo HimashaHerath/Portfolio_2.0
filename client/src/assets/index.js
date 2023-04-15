@@ -30,7 +30,8 @@ import Lightly from "./Lightly.png";
 import Chatsphere from "./Chatsphere.png";
 
 import feedback1 from "./Thakshana.png";
-import feedback2 from "./Hasini.jpeg";
+import feedback2 from "./Hasini.jpg";
+import feedback3 from "./Kavindu.jpg";
 
 export {
   backend,
@@ -62,4 +63,5 @@ export {
   Chatsphere,
   feedback1,
   feedback2,
+  feedback3
 };
