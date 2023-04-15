@@ -25,3 +25,7 @@ jobs:
     - name: Build
       working-directory: ./client
       run: npm run build
+
+    - name: Deploy
+      working-directory: ./client
+      run: npm run deploy
