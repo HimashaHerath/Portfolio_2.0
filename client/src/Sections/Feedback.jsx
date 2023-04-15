@@ -1,5 +1,4 @@
 import React from "react";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "./styles";
@@ -15,42 +14,32 @@ const FeedbackCard = ({
   company,
   image,
 }) => (
-  <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-    <Tilt
-      options={{
-        max: 45,
-        scale: 1,
-        speed: 450,
-      }}
-      className="p-10 rounded-3xl sm:w-[360px] w-full"
-      style={{
-        background:
-          "linear-gradient(to right, rgba(0, 0, 0, 1), rgba(25, 25, 25, 1), rgba(0, 0, 0, 1))",
-      }}
-    >
-      <p className="text-white font-black text-[48px]">"</p>
+  <motion.div
+    variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+    className="p-8 rounded-3xl sm:w-[360px] w-full shadow-lg bg-gradient-to-r from-purple-600 to-blue-600"
+  >
+    <p className="text-white font-black text-[48px]">"</p>
 
-      <div className="mt-1">
-        <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
+    <div className="mt-1">
+      <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
 
-        <div className="mt-7 flex justify-between items-center gap-1">
-          <div className="flex-1 flex flex-col">
-            <p className="text-white font-medium text-[16px]">
-              <span className="blue-text-gradient">@</span> {name}
-            </p>
-            <p className="mt-1 text-secondary text-[12px]">
-              {designation} of {company}
-            </p>
-          </div>
-
-          <img
-            src={image}
-            alt={`feedback_by-${name}`}
-            className="w-10 h-10 rounded-full object-cover"
-          />
+      <div className="mt-7 flex justify-between items-center gap-1">
+        <div className="flex-1 flex flex-col">
+          <p className="text-white font-medium text-[16px]">
+            <span className="pink-text-gradient">@</span> {name}
+          </p>
+          <p className="mt-1 text-white text-opacity-70 text-[12px]">
+            {designation} of {company}
+          </p>
         </div>
+
+        <img
+          src={image}
+          alt={`feedback_by-${name}`}
+          className="w-14 h-14 rounded-full object-cover border-2 border-white"
+        />
       </div>
-    </Tilt>
+    </div>
   </motion.div>
 );
 
@@ -79,4 +68,5 @@ const Feedbacks = () => {
     </div>
   );
 };
+
 export default SectionWrapper(Feedbacks, "");

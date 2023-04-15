@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import { styles } from "./styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,13 +12,15 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link
+  source_code_link,
+  logo,
 }) => {
   return (
     <motion.article
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="bg-sky-800 p-4 rounded-2xl" // Add the background color and padding here
-    >      <a href={source_code_link} target="_blank" rel="noopener noreferrer">
+      className="bg-gradient-to-br from-purple-600 to-blue-600 p-4 rounded-2xl shadow-lg"
+    >
+      <a href={source_code_link} target="_blank" rel="noopener noreferrer">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -33,7 +34,7 @@ const ProjectCard = ({
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={logo}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
@@ -43,7 +44,7 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-white text-opacity-70 text-[14px]">{description}</p>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -63,6 +64,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
+    <section id="projects">
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
@@ -74,9 +76,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
+          Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
+          links to code repositories and live demos in it. They reflect my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
         </motion.p>
@@ -88,6 +90,8 @@ const Works = () => {
         ))}
       </div>
     </>
+    </section>
+
   );
 };
 

@@ -1,7 +1,6 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -14,6 +13,7 @@ import {
     mongodb,
     git,
     figma,
+    github,
     docker,
     meta,
     starbucks,
@@ -204,8 +204,8 @@ import {
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient", // Changed from 'purple-text-gradient'
-        },        
+          color: "blue-text-gradient",
+        },
         {
           name: "mongodb",
           color: "green-text-gradient",
@@ -216,7 +216,7 @@ import {
         },
         {
           name: "Hardhat",
-          color: "orange-text-gradient", // Changed from 'yellow-text-gradient'
+          color: "orange-text-gradient",
         },
         {
           name: "python",
@@ -225,6 +225,7 @@ import {
       ],
       image: blocktheif,
       source_code_link: "https://github.com/leptonworks/blocktheif-system",
+      logo: github, // Add the logo property for the first project
     },
     {
       name: "Lightly",
@@ -234,10 +235,11 @@ import {
         {
           name: "Figma",
           color: "pink-text-gradient",
-        }
+        },
       ],
       image: Lightly,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.figma.com/file/pP1yv1jUynzY9Pvv1Fxlnu/Final?node-id=41%3A14943&t=DVzWMDbV7H6PvYB9-1",
+      logo: figma, // Add the logo property for the second project
     },
     {
       name: "ChatSphere",
@@ -263,6 +265,7 @@ import {
       ],
       image: Chatsphere,
       source_code_link: "https://github.com/HimashaHerath/ChatSphere",
+      logo: github, // Add the logo property for the third project
     },
   ];
   
