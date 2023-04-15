@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -30,8 +29,10 @@ import blocktheif from "./blockthief.png";
 import Lightly from "./Lightly.png";
 import Chatsphere from "./Chatsphere.png";
 
+import feedback1 from "./Thakshana.png";
+import feedback2 from "./Hasini.jpeg";
+
 export {
-  logo,
   backend,
   creator,
   mobile,
@@ -59,4 +60,6 @@ export {
   blocktheif,
   Lightly,
   Chatsphere,
+  feedback1,
+  feedback2,
 };
