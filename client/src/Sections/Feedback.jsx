@@ -16,7 +16,7 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-    className="p-8 rounded-3xl sm:w-[360px] w-full shadow-lg bg-gradient-to-r from-purple-600 to-blue-600"
+    className="p-8 rounded-3xl w-full shadow-lg bg-gradient-to-r from-purple-600 to-blue-600"
   >
     <p className="text-white font-black text-[48px]">"</p>
 
@@ -55,11 +55,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
       <div
-        className={`-mt-20 pb-14 ${styles.paddingX} flex items-start gap-3 overflow-x-auto`}
-        style={{
-          gridAutoRows: "1fr",
-          gridTemplateColumns: "repeat(auto-fit, minmax(360px, 1fr))",
-        }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 -mt-20 pb-14 px-6 md:px-12"
       >
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />

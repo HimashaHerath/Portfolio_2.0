@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
@@ -18,7 +18,11 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-slate-200 focus:outline-none"
         >
-          <i className={`fas fa-${isMenuOpen ? "times" : "bars"}`} />
+          {isMenuOpen ? (
+            <FontAwesomeIcon icon={faTimes} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
         </button>
       </div>
       <ul
@@ -64,24 +68,24 @@ const Navbar = () => {
             duration={500}
             onClick={() => setIsMenuOpen(false)}
             className="cursor-pointer"
-          >
+            >
             Contact
-          </ScrollLink>
-        </li>
-        <li>
-          <a
+            </ScrollLink>
+            </li>
+            <li>
+            <a
             href={resumeUrl}
             download
             className="flex items-center space-x-1 bg-indigo-500 px-4 py-2 rounded-md text-white font-bold"
             onClick={() => setIsMenuOpen(false)}
-          >
+            >
             <FontAwesomeIcon icon={faDownload} />
             <span>Resume</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  );
-};
-
-export default Navbar;
+            </a>
+            </li>
+            </ul>
+            </nav>
+            );
+            };
+            
+            export default Navbar;
