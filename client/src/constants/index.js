@@ -171,24 +171,21 @@ import {
   
   const testimonials = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      testimonial: "Working on our class project, Himasha's skills in software development were evident. His ability to troubleshoot complex issues and provide efficient solutions was impressive.",
       name: "Thakshana",
       designation: "Director",
       company: "Web Genesis",
       image: feedback1,
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      testimonial: "Himasha has a knack for understanding client needs. His contributions to our university tech club's website were thoughtful and well-executed, reflecting his keen attention to detail.",
       name: "Kavindu",
       designation: "Event coordinator",
       company: "Games Guild",
       image:feedback3,
     },
     {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      testimonial: "In our group assignments, Himasha's coding skills were a standout. His approach to problem-solving and his commitment to quality were truly beneficial to our projects.",
       name: "Hasini",
       designation: "CTO",
       company: "456 Enterprises",
