@@ -35,4 +35,6 @@ jobs:
       env:
         GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
       working-directory: ./client
-      run: npm run deploy
+      run: |
+        echo $GH_PAGES_TOKEN  # This is for debugging, remove it in a real scenario
+        npm run deploy
