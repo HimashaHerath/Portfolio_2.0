@@ -175,7 +175,7 @@ import {
       name: "Thakshana",
       designation: "Director",
       company: "Web Genesis",
-      image: feedback1,
+      image: '',
     },
     {
       testimonial: "Himasha has a knack for understanding client needs. His contributions to our university tech club's website were thoughtful and well-executed, reflecting his keen attention to detail.",
