@@ -36,4 +36,5 @@ jobs:
         GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
       working-directory: ./client
       run: |
+        git remote set-url origin https://x-access-token:${GH_PAGES_TOKEN}@github.com/${{ github.repository }}
         npm run deploy
